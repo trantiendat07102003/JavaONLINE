@@ -62,9 +62,9 @@ public class Employee {
         }
     }
 
-    public void copy() {
-        Employee employee = new Employee();
-        employee.getSalary();
+    public Employee copy() {
+        Employee employee = new Employee(ID, name, age, baseSalary);
+        return employee;
     }
 
     public void printInformation() {
