@@ -1,9 +1,9 @@
 package buoi10;
 
-/**
- *
- * @author trant
- */
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+
 public class MyCustomFunctionForButton implements ActionListener {
 
 	@Override

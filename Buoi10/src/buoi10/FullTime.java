@@ -4,9 +4,9 @@ package buoi10;
  *
  * @author trant
  */
-public class FullTime {
-    
-    int expYear;
+public class FullTime extends PartTime {
+	
+	int expYear;
 	double bonus;
 	
 	FullTime(int id, String name, int age, int level, int expYear, double bonus) {
@@ -25,5 +25,5 @@ public class FullTime {
 		return "FullTime [id=" + id + ", name=" + name + ", age=" + age + 
 				", level=" + level + ", expYear=" + expYear + ", bonus=" + bonus + "]";
 	}
-    
+
 }

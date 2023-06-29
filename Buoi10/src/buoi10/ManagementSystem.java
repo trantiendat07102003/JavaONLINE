@@ -1,12 +1,14 @@
 package buoi10;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author trant
  */
 public class ManagementSystem implements ManagementSystemVersion2, ManagementSystemSkeletion {
 
-	ArrayList<Employee> list;
+	   ArrayList<Employee> list;
 	
 	public ManagementSystem() {
 		this.list = new ArrayList<Employee>();
@@ -46,5 +48,8 @@ public class ManagementSystem implements ManagementSystemVersion2, ManagementSys
 	public void filter() {
 		// TODO Auto-generated method stub
 		
-	} 
+	}
+
+	
+	
 }
