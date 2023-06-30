@@ -6,4 +6,7 @@ package Generic1;
  */
 public class Student {
     
+    public int id;
+    public 
+    
 }
