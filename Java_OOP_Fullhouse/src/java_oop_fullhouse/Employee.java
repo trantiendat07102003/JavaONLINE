@@ -1,6 +1,6 @@
 package java_oop_fullhouse;
 
-public class Employee {
+public abstract class Employee {
 
     private int ID;
     private String name;
@@ -62,14 +62,15 @@ public class Employee {
         }
     }
 
-    public Employee copy() {
-        Employee employee = new Employee(ID, name, age, baseSalary);
+    public abstract Employee copy() {
+        Employee employee = new Employee(this.getID(), this.getName(), this.getAge(), this.getBaseSalary());
         return employee;
     }
+    
 
-    public void printInformation() {
-        System.out.printf("id = %d, name = %s, age = %d, baseSalary = %d",
-                this.getID(), this.getName(), this.getAge(), this.getBaseSalary());
-    }
+//    public void printInformation() {
+//        System.out.printf("id = %d, name = %s, age = %d, baseSalary = %d",
+//                this.getID(), this.getName(), this.getAge(), this.getBaseSalary());
+//    }
 
 }

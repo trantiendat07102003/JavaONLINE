@@ -1,6 +1,6 @@
 package java_oop_fullhouse;
 
-public class Java_OOP_Fullhouse {
+public class Main {
 
     
     public static void main(String[] args) {

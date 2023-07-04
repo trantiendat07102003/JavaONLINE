@@ -8,16 +8,14 @@ import java.util.Random;
 import java.io.FileWriter;
 import java.io.BufferedWriter;
 
-
 public class Main {
 
-	public static void main(String[] args) {
-		
-		// E:\code java online\Buoi13\src\buoi13\My Data.txt
-		
-		/*
+    public static void main(String[] args) {
+
+        // E:\code java online\Buoi13\src\buoi13\My Data.txt
+        /*
 		 * Ghi dữ liệu vào file
-		 */
+         */
 //		File file = new File("E:\code java online\Buoi13\src\buoi13\My Data.txt");
 //		try {
 ////			FileWriter fileWriter = new FileWriter(file, true);
@@ -42,36 +40,35 @@ public class Main {
 //		} catch (IOException e) {
 //			e.printStackTrace();
 //		}
-		
-		/*
+        /*
 		 * Đọc dữ liệu từ file
-		 */
-		File file = new File("E:\\code java online\\Buoi13\\src\\buoi13\\My Data.txt");
-		try {
-			FileReader fileReader = new FileReader(file);
-			BufferedReader br = new BufferedReader(fileReader);
-			
-			String line;
-			while(true) {
-				line = br.readLine();
-				if(line != null) {
+         */
+        File file = new File("E:\\code java online\\Buoi13\\src\\buoi13\\My Data.txt");
+        try {
+            FileReader fileReader = new FileReader(file);
+            BufferedReader br = new BufferedReader(fileReader);
+
+            String line;
+            while (true) {
+                line = br.readLine();
+                if (line != null) {
 //					System.out.println(line);
-					String[] strArray = line.split(" ");
-					int sum = 0;
-					for(String s : strArray) {
-						sum += Integer.parseInt(s);
-					}
-					System.out.println("Result: " + sum);
-				}else {
-					break;
-				}
-			}
-			
-			br.close();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		
-	}
-	
+                    String[] strArray = line.split(" ");
+                    int sum = 0;
+                    for (String s : strArray) {
+                        sum += Integer.parseInt(s);
+                    }
+                    System.out.println("Result: " + sum);
+                } else {
+                    break;
+                }
+            }
+
+            br.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
 }

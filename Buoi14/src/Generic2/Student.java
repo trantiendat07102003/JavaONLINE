@@ -1,4 +1,4 @@
-package Generic1;
+package Generic2;
 
 import java.util.Objects;
 

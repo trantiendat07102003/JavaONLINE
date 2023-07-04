@@ -51,19 +51,29 @@ public class Developer extends Employee {
     }
 
     @Override
-    public Employee copy() {
+    public Developer copy() {
 
-        Employee employee = new Employee(expYear, teamName, expYear, expYear);
-
-        return employee;
+        Developer developer = new Developer
+        (this.getExpYear(), this.getTeamName(), this.getID(), this.getName(), this.getAge(), this.getBaseSalary());
+        
+        return developer;
     }
     
+    
+
+//    @Override
+//    public void printInformation() {
+//
+//        System.out.printf("Developer[ ID = %d, Name = %s, Age = %d, BaseSalary = %d, ExpYear = %d, TeamName = %s]",
+//                this.getID(), this.getName(), this.getAge(), this.getBaseSalary(), this.getExpYear(), this.getTeamName());
+//
+//    }
+
     @Override
-    public void printInformation(){
-        
-        System.out.printf("Developer[ ID = %d, Name = %s, Age = %d, BaseSalary = %d, ExpYear = %d, TeamName = %s]",
-                this.getID(),this.getName(),this.getAge(),this.getBaseSalary(),this.getExpYear(),this.getTeamName());
-        
+    public String toString() {
+        return "Developer{" + "expYear=" + this.expYear + ", teamName=" + this.teamName + '}';
     }
+    
+    
 
 }
