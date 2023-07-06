@@ -53,13 +53,11 @@ public class Developer extends Employee {
     @Override
     public Developer copy() {
 
-        Developer developer = new Developer
-        (this.getExpYear(), this.getTeamName(), this.getID(), this.getName(), this.getAge(), this.getBaseSalary());
-        
+        Developer developer = new Developer(this.getExpYear(), this.getTeamName(), this.getID(), this.getName(), this.getAge(), this.getBaseSalary());
+
         return developer;
     }
-    
-    
+//    
 
 //    @Override
 //    public void printInformation() {
@@ -68,12 +66,9 @@ public class Developer extends Employee {
 //                this.getID(), this.getName(), this.getAge(), this.getBaseSalary(), this.getExpYear(), this.getTeamName());
 //
 //    }
-
     @Override
     public String toString() {
         return "Developer{" + "expYear=" + this.expYear + ", teamName=" + this.teamName + '}';
     }
-    
-    
 
 }

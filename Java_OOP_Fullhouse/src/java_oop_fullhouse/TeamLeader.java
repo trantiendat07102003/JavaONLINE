@@ -4,8 +4,8 @@ package java_oop_fullhouse;
  *
  * @author trant
  */
-public class TeamLeader extends Developer{
-    
+public class TeamLeader extends Developer {
+
     private double bonusRate;
 
     public double getBonusRate() {
@@ -23,28 +23,25 @@ public class TeamLeader extends Developer{
         super(expYear, teamName, ID, name, age, baseSalary);
         this.bonusRate = bonusRate;
     }
-    
+
     @Override
-    public double getSalary(){
+    public double getSalary() {
         return this.getBaseSalary() + (this.getBonusRate() * this.getBaseSalary());
     }
-    
+
     @Override
-    public TeamLeader copy(){
+    public TeamLeader copy() {
         TeamLeader teamLeader = new TeamLeader(this.getBonusRate(), this.getExpYear(), this.getTeamName(), this.getID(), this.getName(), this.getAge(), this.getBaseSalary());
         return teamLeader;
     }
-    
+
 //    @Override
 //    public void printInformation(){
 //        System.out.printf("TeamLeader[id = %d, name = %s, age = %d, baseSalary = %d, expYear = %d, teamName = %s, bonusRate = %d");
 //    }
-
     @Override
     public String toString() {
         return "TeamLeader{" + "bonusRate=" + this.bonusRate + '}';
     }
 
-    
-    
 }

@@ -44,12 +44,9 @@ public class Tester extends Employee {
 //        System.out.printf("Tester[id = %d, name = %s, age = %d, baseSalary = %d, type = %s",
 //                this.getID(), this.getName(), this.getAge(), this.getBaseSalary(), this.getType());
 //    }
-
     @Override
     public String toString() {
         return "Tester{" + "type=" + this.type + '}';
     }
-    
-    
 
 }
